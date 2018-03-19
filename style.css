@@ -100,6 +100,23 @@ header, .bar > div, main > div, footer {
 	}
 }
 
+main > div, footer {
+	margin-top: 16px;
+}
+@media all and (min-width: 400px) {
+	main > div, footer {
+		margin-top: 32px;
+	}
+}
+
+.pullaway {
+	margin-bottom: 1.6px;
+}
+@media all and (min-width: 400px) {
+	.pullaway {
+		margin-bottom: 3.2px;
+	}
+}
 .pullaway > i {
 	font-style: normal;
 	display: inline-block;
@@ -217,7 +234,7 @@ header, .bar > div, main > div, footer {
 #faq div {
 	transition: ease-in-out padding 0.1s;
 	padding-top: 4px;
-	padding-bottom: 4px;
+	padding-bottom: 5.6px;
 	position: relative;
 }
 @media all and (min-width: 400px) {
@@ -227,18 +244,18 @@ header, .bar > div, main > div, footer {
 }
 @media all and (min-width: 400px) {
 	#faq div {
-		padding-bottom: 8px;
+		padding-bottom: 11.2px;
 	}
 }
 #faq div.collapsed {
 	overflow: hidden;
 	white-space: nowrap;
 	padding-top: 0;
-	padding-bottom: 0.8px;
+	padding-bottom: 1.6px;
 }
 @media all and (min-width: 400px) {
 	#faq div.collapsed {
-		padding-bottom: 1.6px;
+		padding-bottom: 3.2px;
 	}
 }
 #faq div.collapsed p {
