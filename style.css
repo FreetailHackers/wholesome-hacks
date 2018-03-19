@@ -30,12 +30,12 @@ h1, h2, h3, p {
 }
 @media all and (min-width: 400px) {
 	h1, h2, h3, p {
-		margin-top: 16px;
+	margin-top: 16px;
 	}
 }
 @media all and (min-width: 400px) {
 	h1, h2, h3, p {
-		margin-bottom: 16px;
+	margin-bottom: 16px;
 	}
 }
 
@@ -53,7 +53,7 @@ h2:after {
 }
 @media all and (min-width: 400px) {
 	h2:after {
-		margin-left: 16px;
+	margin-left: 16px;
 	}
 }
 
@@ -76,27 +76,27 @@ header, .bar > div, main > div, footer {
 }
 @media all and (min-width: 400px) {
 	header, .bar > div, main > div, footer {
-		margin-top: 16px;
+	margin-top: 16px;
 	}
 }
 @media all and (min-width: 400px) {
 	header, .bar > div, main > div, footer {
-		margin-bottom: 16px;
+	margin-bottom: 16px;
 	}
 }
 @media all and (min-width: 400px) {
 	header, .bar > div, main > div, footer {
-		padding-left: 16px;
+	padding-left: 16px;
 	}
 }
 @media all and (min-width: 400px) {
 	header, .bar > div, main > div, footer {
-		padding-right: 16px;
+	padding-right: 16px;
 	}
 }
 @media (min-width: 1032px) {
 	header, .bar > div, main > div, footer {
-		padding-left: 108px;
+	padding-left: 108px;
 	}
 }
 
@@ -105,16 +105,16 @@ main > div, footer {
 }
 @media all and (min-width: 400px) {
 	main > div, footer {
-		margin-top: 32px;
+	margin-top: 32px;
 	}
 }
 
 .pullaway {
-	margin-bottom: 1.6px;
+	padding-bottom: 4px;
 }
 @media all and (min-width: 400px) {
 	.pullaway {
-		margin-bottom: 3.2px;
+	padding-bottom: 8px;
 	}
 }
 .pullaway > i {
@@ -123,27 +123,27 @@ main > div, footer {
 	min-width: 100px;
 }
 .pullaway > i, .pullaway > span {
-	opacity: 0.8;
+	opacity: 0.7;
 }
 .pullaway p {
 	margin: 0;
 }
 @media (min-width: 1032px) {
 	.pullaway {
-		position: relative;
-		margin-top: 0;
+	position: relative;
+	margin-top: 0;
 	}
 	.pullaway > i {
-		display: block;
-		position: absolute;
-		right: 100%;
-		text-align: right;
-		padding-right: 8px;
+	display: block;
+	position: absolute;
+	right: 100%;
+	text-align: right;
+	padding-right: 8px;
 	}
 }
 @media all and (min-width: 1032px) and (min-width: 400px) {
 	.pullaway > i {
-		padding-right: 16px;
+	padding-right: 16px;
 	}
 }
 
@@ -154,7 +154,7 @@ main > div, footer {
 }
 @media all and (min-width: 400px) {
 	.bar {
-		margin-top: 16px;
+	margin-top: 16px;
 	}
 }
 .bar > div {
@@ -165,12 +165,12 @@ main > div, footer {
 }
 @media all and (min-width: 400px) {
 	.bar > div {
-		padding-top: 16px;
+	padding-top: 16px;
 	}
 }
 @media all and (min-width: 400px) {
 	.bar > div {
-		padding-bottom: 16px;
+	padding-bottom: 16px;
 	}
 }
 .bar > div > span {
@@ -188,22 +188,22 @@ main > div, footer {
 }
 @media all and (min-width: 400px) {
 	.bar .cta {
-		padding: 19.2px;
+	padding: 19.2px;
 	}
 }
 @media all and (min-width: 400px) {
 	.bar .cta {
-		padding-top: 8px;
+	padding-top: 8px;
 	}
 }
 @media all and (min-width: 400px) {
 	.bar .cta {
-		padding-bottom: 8px;
+	padding-bottom: 8px;
 	}
 }
 @media all and (min-width: 400px) {
 	.bar .cta {
-		margin-left: 8px;
+	margin-left: 8px;
 	}
 }
 .bar .cta span {
@@ -216,18 +216,27 @@ main > div, footer {
 }
 @media all and (max-width: 533.3333333333px) {
 	.bar > div {
-		display: block;
+	display: block;
 	}
 	.bar .cta {
-		display: block;
-		margin: 0;
-		margin-top: 8px;
-		text-align: center;
+	display: block;
+	margin: 0;
+	margin-top: 8px;
+	text-align: center;
 	}
 }
 @media all and (max-width: 533.3333333333px) and (min-width: 400px) {
 	.bar .cta {
-		margin-top: 16px;
+	margin-top: 16px;
+	}
+}
+
+#schedule .pullaway {
+	padding-bottom: 1.6px;
+}
+@media all and (min-width: 400px) {
+	#schedule .pullaway {
+	padding-bottom: 3.2px;
 	}
 }
 
@@ -239,12 +248,12 @@ main > div, footer {
 }
 @media all and (min-width: 400px) {
 	#faq div {
-		padding-top: 8px;
+	padding-top: 8px;
 	}
 }
 @media all and (min-width: 400px) {
 	#faq div {
-		padding-bottom: 11.2px;
+	padding-bottom: 11.2px;
 	}
 }
 #faq div.collapsed {
@@ -255,11 +264,11 @@ main > div, footer {
 }
 @media all and (min-width: 400px) {
 	#faq div.collapsed {
-		padding-bottom: 3.2px;
+	padding-bottom: 3.2px;
 	}
 }
 #faq div.collapsed p {
-	opacity: 0.4;
+	display: none;
 }
 #faq div:after {
 	content: "";
@@ -278,12 +287,21 @@ main > div, footer {
 	padding-bottom: 0;
 }
 #faq strong {
+	display: block;
 	cursor: pointer;
+}
+#faq strong:hover {
+	color: #2f9fa7;
 }
 #faq p {
 	margin: 0;
-	display: inline;
-	transition: ease-in-out opacity 0.1s;
+	padding-top: 1.6px;
+	opacity: 0.7;
+}
+@media all and (min-width: 400px) {
+	#faq p {
+	padding-top: 3.2px;
+	}
 }
 
 footer {
@@ -301,11 +319,11 @@ footer:before {
 }
 @media all and (min-width: 400px) {
 	footer:before {
-		margin-bottom: 16px;
+	margin-bottom: 16px;
 	}
 }
 @media all and (min-width: 400px) {
 	footer {
-		padding: 16px;
+	padding: 16px;
 	}
 }
