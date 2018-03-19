@@ -1,0 +1,213 @@
+@import "compass";
+
+$pad: 8px;
+$pagewidth: 800px;
+$sidewidth: 100px;
+$lineheight: 1.4;
+$vibrant: #2f9fa7;
+$black: darken($vibrant, 26%);
+$white: #f9f7e9;
+
+@mixin puffy($property) {
+	@include puffy($property, 1);
+}
+
+@mixin puffy($property, $multiplier: 1) {
+	#{$property}: $multiplier*$pad;
+	@media all and (min-width: ($pagewidth/2)) {
+		#{$property}: $multiplier*$pad*2;
+	}
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-family: "Lato", sans-serif;
+	color: $black;
+	background: $white;
+	line-height: $lineheight;
+}
+
+body {
+	border: 0 solid $vibrant;
+	border-width: 7px 0;
+}
+
+::selection {
+	color: $white;
+	background: darken($vibrant, 10%);
+}
+
+h1, h2, h3 {
+	font-family: "Abril Fatface", cursive;
+	font-weight: normal;
+}
+
+h1, h2, h3, p {
+	margin: 0;
+	@include puffy(margin-top);
+	@include puffy(margin-bottom);
+}
+
+h2 {
+	position: relative;
+	display: flex;
+	&:after {
+		content: "";
+		display: block;
+		border-bottom: 3px solid $vibrant;
+		height: 0.5em*$lineheight;
+		flex-grow: 1;
+		@include puffy(margin-left);
+	}
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px solid;
+	color: $vibrant;
+	&:hover {
+		border-bottom-width: 2px;
+	}
+}
+
+$pullat: $pagewidth+2*$sidewidth+4*$pad;
+
+header, .bar > div, main > div, footer {
+	max-width: $pagewidth;
+	margin: auto;
+	@include puffy(margin-top);
+	@include puffy(margin-bottom);
+	@include puffy(padding-left);
+	@include puffy(padding-right);
+	// background: rgba(255,0,0,0.1);
+	@media (min-width: $pullat) {
+		padding-left: $sidewidth+$pad;
+	}
+}
+
+.pullaway {
+	> i {
+		font-style: normal;
+		display: inline-block;
+		min-width: $sidewidth;
+	}
+	> i, > span {
+		opacity: 0.8;
+	}
+	p {
+		margin: 0;
+	}
+	@media (min-width: $pullat) {
+		position: relative;
+		margin-top: 0;
+		> i {
+			display: block;
+			position: absolute;
+			right: 100%;
+			text-align: right;
+			@include puffy(padding-right);
+		}
+	}
+}
+
+.bar {
+	background: $vibrant;
+	color: $white;
+	@include puffy(margin-top);
+	> div {
+		@include puffy(padding-top);
+		@include puffy(padding-bottom);
+		display: flex;
+		align-items: center;
+		> span {
+			flex: 1;
+		}
+	}
+	.cta {
+		display: inline-block;
+		@include puffy(padding, 1.2);
+		@include puffy(padding-top, 0.5);
+		@include puffy(padding-bottom, 0.5);
+		background: $white;
+		@include puffy(margin-left, 0.5);
+		border-radius: 4px;
+		border-bottom-width: 0;
+		span {
+			transition: ease-in-out transform 0.1s;
+			display: inline-block;
+			transform: translateX(0);
+		}
+		&:hover span {
+			transform: translateX(4px);
+		}
+	}
+	@media all and (max-width: ($pagewidth/3*2)) {
+		> div {
+			display: block;
+		}
+		.cta {
+			display: block;
+			margin: 0;
+			@include puffy(margin-top);
+			text-align: center;
+		}
+	}
+}
+
+#faq {
+	div {
+		transition: ease-in-out padding 0.1s;
+		@include puffy(padding-top, 0.5);
+		@include puffy(padding-bottom, 0.5);
+		&.collapsed {
+			overflow: hidden;
+			white-space: nowrap;
+			padding-top: 0;
+			@include puffy(padding-bottom, 0.1);
+			p {
+				opacity: 0.4;
+			}
+		}
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			height: 1em*$lineheight;
+			width: 80px;
+			@include background-image(linear-gradient(left, rgba($white,0) 0%,rgba($white,1) 100%));
+			pointer-events: none;
+		}
+		&:first-of-type {
+			padding-top: 0;
+		}
+		&:last-of-type {
+			padding-bottom: 0;
+		}
+	}
+	strong {
+		cursor: pointer;
+	}
+	p {
+		margin: 0;
+		display: inline;
+		transition: ease-in-out opacity 0.1s;
+	}
+}
+
+footer {
+	&:before {
+		content: "";
+		display: block;
+		border-bottom: 3px solid $vibrant;
+		max-width: 120px;
+		margin: auto;
+		@include puffy(margin-bottom);
+	}
+	text-align: center;
+	@include puffy(padding);
+	opacity: 0.9;
+}
