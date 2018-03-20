@@ -31,6 +31,10 @@ h1, h2, p {
 @media all and (min-width: 400px) {
 	h1, h2, p {
 		margin-top: 16px;
+	}
+}
+@media all and (min-width: 400px) {
+	h1, h2, p {
 		margin-bottom: 16px;
 	}
 }
@@ -39,6 +43,12 @@ h2 {
 	position: relative;
 	display: flex;
 	font-size: 1.7em;
+	margin-bottom: 12px;
+}
+@media all and (min-width: 400px) {
+	h2 {
+		margin-bottom: 24px;
+	}
 }
 h2:after {
 	content: "";
@@ -74,19 +84,35 @@ header, .bar > div, main > div, footer {
 @media all and (min-width: 400px) {
 	header, .bar > div, main > div, footer {
 		margin-top: 16px;
+	}
+}
+@media all and (min-width: 400px) {
+	header, .bar > div, main > div, footer {
 		margin-bottom: 16px;
+	}
+}
+@media all and (min-width: 400px) {
+	header, .bar > div, main > div, footer {
 		padding-left: 16px;
+	}
+}
+@media all and (min-width: 400px) {
+	header, .bar > div, main > div, footer {
 		padding-right: 16px;
+	}
+}
+@media (min-width: 1032px) {
+	header, .bar > div, main > div, footer {
 		padding-left: 108px;
 	}
 }
 
 main > div, footer {
-	margin-top: 16px;
+	margin-top: 24px;
 }
 @media all and (min-width: 400px) {
 	main > div, footer {
-		margin-top: 32px;
+		margin-top: 48px;
 	}
 }
 
@@ -96,12 +122,16 @@ header {
 header img {
 	max-width: 100%;
 	display: block;
-	margin-top: 32px;
+	margin-top: 40px;
 	margin-bottom: 32px;
 }
 @media all and (min-width: 400px) {
 	header img {
-		margin-top: 64px;
+		margin-top: 80px;
+	}
+}
+@media all and (min-width: 400px) {
+	header img {
 		margin-bottom: 64px;
 	}
 }
@@ -147,11 +177,11 @@ header img {
 .bar {
 	background: #2f9fa7;
 	color: #f7f7f7;
-	margin-top: 8px;
+	margin-top: 32px;
 }
 @media all and (min-width: 400px) {
 	.bar {
-		margin-top: 16px;
+		margin-top: 64px;
 	}
 }
 .bar > div {
@@ -163,6 +193,10 @@ header img {
 @media all and (min-width: 400px) {
 	.bar > div {
 		padding-top: 16px;
+	}
+}
+@media all and (min-width: 400px) {
+	.bar > div {
 		padding-bottom: 16px;
 	}
 }
@@ -182,8 +216,20 @@ header img {
 @media all and (min-width: 400px) {
 	.bar .cta {
 		padding: 19.2px;
+	}
+}
+@media all and (min-width: 400px) {
+	.bar .cta {
 		padding-top: 8px;
+	}
+}
+@media all and (min-width: 400px) {
+	.bar .cta {
 		padding-bottom: 8px;
+	}
+}
+@media all and (min-width: 400px) {
+	.bar .cta {
 		margin-left: 8px;
 	}
 }
@@ -225,11 +271,14 @@ header img {
 	transition: ease-in-out padding 0.1s;
 	padding-top: 4px;
 	padding-bottom: 5.6px;
-	position: relative;
 }
 @media all and (min-width: 400px) {
 	#faq div {
 		padding-top: 8px;
+	}
+}
+@media all and (min-width: 400px) {
+	#faq div {
 		padding-bottom: 11.2px;
 	}
 }
@@ -246,16 +295,6 @@ header img {
 }
 #faq div.collapsed p {
 	display: none;
-}
-#faq div:after {
-	content: "";
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	height: 1.4em;
-	width: 80px;
-	background: linear-gradient(to right, rgba(247, 247, 247, 0) 0%, #f7f7f7 100%);
-	pointer-events: none;
 }
 #faq div:first-of-type {
 	padding-top: 0;
